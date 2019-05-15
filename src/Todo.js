@@ -11,17 +11,11 @@ class Todo extends Component {
         this.handleUpdate = this.handleUpdate.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleClick = this.handleClick.bind(this);
-        this.handleRefresh = this.handleRefresh.bind(this);
-    }
-
-    handleRefresh(){
-
     }
     handleEdit(){
         this.setState({
             isEditing: !this.state.isEditing
         })
-        console.log("editing");
     }
 
     handleRemove(evt){
@@ -65,7 +59,7 @@ class Todo extends Component {
             <div>
                 <div className="Todo-todo">
                     <li className="Todo-li">
-                        <div className={(completed) ? "Todo-completed Todo-text" : "Todo-text"}>
+                        <div onClick={this.handleClick} className={(completed) ? "Todo-completed Todo-text" : "Todo-text"}>
                             {task}
                         </div>
                     </li>
@@ -81,7 +75,7 @@ class Todo extends Component {
     }
     render(){
         return (
-            <div onClick={this.handleClick} className="Todo" style={{backgroundColor: this.props.color}}>
+            <div className="Todo" style={{backgroundColor: this.props.color}}>
                 {this.renderTodo()}
             </div>
         )
