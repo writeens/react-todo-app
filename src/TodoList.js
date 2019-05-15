@@ -126,7 +126,7 @@ class TodoList extends Component {
     render(){
         return (
             <div>
-                <h1><span className="TodoList-what">What </span><span className="TodoList-todo">Todo</span><span className="TodoList-q">?</span></h1>
+                <h1><span className="TodoList-what">What </span><span className="TodoList-todo">To-do</span><span className="TodoList-q">?</span></h1>
                 <NewTodoForm addTodo={this.add}/>
                 <ul className="TodoList-ul">
                     {this.renderTodo()}
