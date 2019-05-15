@@ -1,0 +1,61 @@
+.TodoList-ul {
+    padding: 0;
+    margin: 0;
+}
+.TodoList-what {
+    animation-name: neon-blue;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.TodoList-todo {
+    animation-name: neon-orange;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+.TodoList-q {
+    animation-name: neon-red;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes neon-orange {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #fa1c16, 0 0 3vw #fa1c16, 0 0 10vw #fa1c16,
+        0 0 10vw #fa1c16, 0 0 0.4vw #fed128, 0.5vw 0.5vw 0.1vw #806914;
+      color: #fed128;
+    }
+    50% {
+      text-shadow: 0 0 0.5vw #800e0b, 0 0 1.5vw #800e0b, 0 0 5vw #800e0b,
+        0 0 5vw #800e0b, 0 0 0.2vw #800e0b, 0.5vw 0.5vw 0.1vw #40340a;
+      color: #806914;
+    }
+  }
+  
+  @keyframes neon-blue {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #1041ff, 0 0 3vw #1041ff, 0 0 10vw #1041ff,
+        0 0 10vw #1041ff, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+      color: #28d7fe;
+    }
+    50% {
+      text-shadow: 0 0 0.5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180,
+        0 0 5vw #082180, 0 0 0.2vw #082180, 0.5vw 0.5vw 0.1vw #0a3940;
+      color: #146c80;
+    }
+  }
+
+  @keyframes neon-red {
+    0%,
+    100% {
+      text-shadow: 0 0 1vw #ff1010, 0 0 3vw #ff2c10, 0 0 10vw #ff4810,
+        0 0 10vw #ff4810, 0 0 0.4vw #8bfdfe, 0.5vw 0.5vw 0.1vw #147280;
+      color: #ffffff;
+    }
+    50% {
+      text-shadow: 0 0 0.5vw #ff0303, 0 0 1.5vw #ff0303, 0 0 5vw #ff0303,
+        0 0 5vw #ff0303, 0 0 0.2vw #ff0303, 0.5vw 0.5vw 0.1vw #0a3940;
+      color: #922a18;
+    }
+  }
