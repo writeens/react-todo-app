@@ -2,6 +2,7 @@
   "name": "react-todo-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://writeens.github.io/react-todo-app",
   "dependencies": {
     "localforage": "^1.7.3",
     "react": "^16.8.6",
