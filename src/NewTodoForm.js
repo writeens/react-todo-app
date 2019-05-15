@@ -32,7 +32,7 @@ class NewTodoForm extends Component {
                     type="text"
                     name="todo"
                     id="task"
-                    placeholder="New Todo"
+                    placeholder="New To-do"
                     value={this.state.todo}
                     onChange={this.handleChange}
                     />
