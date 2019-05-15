@@ -1,0 +1,95 @@
+.Todo-completed {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+.Todo {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 0.7rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.6s cubic-bezier(0.19, 2.68, 1, 1);
+}
+
+.Todo:hover {
+  transform: translateY(0.3rem);
+}
+
+.Todo-li {
+  list-style: none;
+}
+.Todo-todo {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.Todo-buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 0.3rem 0.5rem 0.3rem 0.3rem;
+  max-width: 50px;
+  justify-content: space-evenly;
+}
+.Todo-buttons > * {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin: 0.2rem;
+  color: white;
+  
+}
+.Todo-text {
+  cursor: pointer;
+  max-width: 400px;
+  word-wrap: break-word;
+  margin: 0.5rem 0rem 0rem 1rem;
+  font-size: 1rem;
+  padding: 0;
+  text-align: left;
+  color: white;
+}
+.Todo-date {
+  justify-content: center;
+  margin: 0.5rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+  color: white;
+}
+.Todo-edit-form input {
+  border: none;
+  background: #f7f1f1;
+  margin: 0.3rem;
+  padding-left: 1rem;
+  font-size: initial;
+  width: 350px;
+  height: 2.5rem;
+}
+.Todo-edit-form button {
+  height: 2.5rem;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  border: none;
+  background: #ff6666;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: background 0.2s ease-out;
+}
+
+@media screen and (max-width: 500px) {
+  .Todo-edit-form input {
+      width: auto;
+  }
+  .Todo {
+    padding: 1rem;
+  }
+  .Todo-date {
+    padding-bottom: 0;
+  }
+}
