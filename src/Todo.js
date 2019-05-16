@@ -51,6 +51,7 @@ class Todo extends Component {
                         name="todo"
                         value={this.state.todo}
                         onChange={this.handleChange}
+                        required
                     />
                     <button onClick={this.handleRefresh}>SAVE</button>
                 </form>

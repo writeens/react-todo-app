@@ -35,6 +35,7 @@ class NewTodoForm extends Component {
                     placeholder="New To-do"
                     value={this.state.todo}
                     onChange={this.handleChange}
+                    required
                     />
                     <button><i className="fas fa-plus-circle"></i></button>
                 </div>
